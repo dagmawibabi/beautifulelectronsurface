@@ -1,0 +1,14 @@
+{
+  "name": "beautiful-surface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "dagmawi-babi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "9.0.5"
+  }
+}

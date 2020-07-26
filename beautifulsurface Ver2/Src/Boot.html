@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Surface</title>
+    <link type="text/css" rel="stylesheet" href="./Styles/Boot.css">
+    <link type="text/css" rel="stylesheet" href="./Styles/Desktop.css">
+</head>
+<body>
+    <!-- Boot screen container -->
+    <div id="bootScreen">
+        <h1 id="bootLogo">Beautiful Surface</h1>
+        <div id="bootProgressbarContainer">
+            <progress id="bootProgressbar" min=0 max=100> </progress>
+        </div>
+    </div> 
+
+    <!-- Lock screen container -->
+    <div id="lockScreen">
+        <div id="lockScreenUserProfile">
+            <image id="lockScreenProfilePic"></image>
+            <div id="lockScreenAuthentication">
+                <h5 id="lockScreenTime">12:56 PM</h5>
+                <h2 id="lockScreenUsername"></h2>
+                <div id="loginInputs">
+                    <input id="lockScreenPasswordInput" type="password">
+                    <button id="loginBtn"> login </button>
+                </div>
+                <h5 id="capsLockState">CapsLock</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop/Home screen container -->
+    <div id="desktopContainer">
+        <!-- Top Bar -->
+        <div id="desktopTopBar">
+            <div id="topBarLeftContainer">
+                <image id="desktopProfilePic"></image>
+                <h5 id="desktopUsername"></h5>
+            </div>
+            <div id="topBarCenterContainer">
+                <h5 id="desktopTime"></h5>                
+            </div>
+            <div id="topBarRightContainer">
+                <h5 id="topBarNotificationBtn">Notification 98%</h5>
+            </div>
+        </div>
+        <!-- Main Working Area -->
+        <div id="desktopWorkArea">
+            <div id="desktopFilesContainer">
+            </div>
+        </div>
+        <!-- User Profile -->
+        <div id="userProfileContainer">
+            <!-- User Profile Options -->
+            <div id="biggerUserProfile">
+                <image id="userProfilePic"></image>
+                <div id="userProfileNameBio">
+                    <h3 id="userProfileName">Dagmawi Babi</h3>
+                    <h5 id="userProfileBio">"God is love!"</h5>    
+                </div>
+            </div>
+            <!-- User Profile Power Controls -->
+            <div id="userProfilePowerControls">
+                <button id="userProfilePowerControlsShutdown" class="userProfilePowerControls">Shutdown</button>
+                <button id="userProfilePowerControlsRestart" class="userProfilePowerControls">Restart</button>
+                <button id="userProfilePowerControlsSleep" class="userProfilePowerControls">Sleep</button>
+            </div>
+            <!-- User Profile Music Player -->
+            <div id="userProfileMusicPlayer">
+                <audio id="userProfileMusicPlayerCurMusic"></audio>
+                <div id="userProfileMusicControls">
+                    <div id="userProfileMusicSeekerContainer">
+                        <h5 id="userProfileMusicSeekerStart">00:00</h5>
+                        <input id="userProfileMusicSeeker" type="range" min=0 value=0 max=100>
+                        <h5 id=userProfileMusicSeekerEnd>00:00</h5>
+                    </div>
+                    <div id="userProfileMusicVolumeContainer">
+                        <h5 id="userProfileMusicVolume">Volume</h5>
+                        <input id="userProfileMusicVolumeSeeker" type="range" min=0 value=20 max=100>
+                        <h5 id=userProfileMusicVolumeValue>20<h5>
+                    </div>
+                    <div id=userProfileMusicButtons>
+                        <button class="userProfileMusicButtons">Play</button>
+                        <button class="userProfileMusicButtons">Mute</button>
+                        <button class="userProfileMusicButtons">Repeat</button>
+                    </div>
+                </div>
+                <div id="userProfileMusicQueue">
+                    <!-- <div class="userProfileMusicNameContainer">
+                        <image class="userProfileMusicIcon" src="../Images/musicIcon1.png"></image>
+                        <h5 class="userProfileMusicName">Adore You - Miley Cyrus</h5>
+                        <audio src="../Audio/TNWM.mp3"></audio>
+                    </div> -->
+                </div>
+            </div>
+            <!--  User Profile Login and Switch User Controls -->
+            <div id="logoutSwitchUserContainer">
+                <button id="logoutSwitchUserSwitchUser" class="logoutSwitchUserControls">Switch User</button>
+                <button id="logoutSwitchUserLogout" class="logoutSwitchUserControls">Logout</button>
+            </div>
+        </div>
+    </div>
+     <!-- JS -->
+     <script src="./Scripts/Boot.js" ></script>
+     <script src="./Scripts/Desktop.js" ></script>
+ 
+</body>
+</html>

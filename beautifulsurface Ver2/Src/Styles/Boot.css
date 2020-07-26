@@ -1,0 +1,141 @@
+* {
+    color: silver;
+    margin: 0;
+    padding: 0;
+    -webkit-user-drag: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+*::selection {
+    color: black;
+    background-color:white;
+}
+body {
+    color: white;
+    height: 50vw;
+    background-color: #111;
+    font-family: Helvetica;
+}
+
+/* Boot screen styles*/
+#bootScreen {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bootLogo {
+    font-size: 230%;
+    color: silver;
+}
+#bootProgressbar {
+    margin-top: 5px;
+    width: 300px;
+}
+
+/* Lock screen styles*/
+@keyframes unBlur {
+    from {
+        filter: blur(100px);
+    } to {
+        filter: blur(0px);
+    }
+} 
+@keyframes floatShadow {
+    from {
+        box-shadow: 0;
+    } to {
+        box-shadow: 10px 10px 100px #666;
+    }
+}
+#lockScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url("D:/Coding Projects/Big Projects/Beautiful/Beautiful Surface Electron/beautifulsurface Ver2/Images/jaanus.JPG");
+    display: none;
+}
+#lockScreenTime {
+    color: gray;
+    margin-right: 2%; 
+    align-self: flex-end;
+}
+#lockScreenUserProfile {
+    padding: 1%;
+    display: flex;
+    margin-left: 2%;
+    margin-top: -10%;
+    border-radius: 2%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: 4px 4px 80px #666;*/
+    background-color: #222;
+    animation: floatShadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+#lockScreenProfilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 2%;
+}
+#lockScreenAuthentication {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+#lockScreenUsername {
+    color: Silver;
+}
+#loginInputs {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 19px;
+    margin-top: 4%;
+    background-color: white;
+    border: 1px solid #777;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#lockScreenPasswordInput {
+    border: 0px;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    margin-top: 3%;
+    font-size: 120%;
+    padding-left: 2%;
+    border-bottom: 1px solid #777;
+}
+#loginBtn {
+    width: 70px;
+    height: 19px;
+    background-color: #777;
+    border:2px solid #777;
+    border: 0 2px 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#loginBtn:hover {
+    color: silver;
+    border: 0 2px 2px;
+    border:2px solid #333;
+    background-color: #333;
+}
+#capsLockState {
+    color: gray;
+    margin-top: 4%;
+    visibility: hidden;
+    align-self: center;
+    margin-left: -4%;
+}
