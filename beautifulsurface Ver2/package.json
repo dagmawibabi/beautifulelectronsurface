@@ -9,6 +9,6 @@
   "author": "dagmawi-babi",
   "license": "ISC",
   "devDependencies": {
-    "electron": "9.0.5"
+    "electron": "10.1.3"
   }
 }
